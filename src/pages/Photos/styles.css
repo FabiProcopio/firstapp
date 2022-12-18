@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+h4 {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.gallery {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.gallery-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;    
+}
+
+.photo {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 5px;
+}
+
+.photo:hover {
+    transform: scale(1.02);
+}
+
+.gallery1 {
+    background-image: url('https://blogger.googleusercontent.com/img/a/AVvXsEgrS7SD-dnBKhCMHpRI_uJafzgx1PYJZcIEUbqL8wlWW51j9FnAy4rMbN6fAgUumWSJJsc599JTuLcC8gF56WKEf-POLVeuo53cW1Oby_d6wTaI_7_Nrig9aA9eMC53qr__thCwiaw9j7osftI4NRSuli-Qbppq9B1mZ437hXBFk2aXdnIrH00z7L3f=s1200');
+}
+.gallery2 {
+    background-image: url('https://blogger.googleusercontent.com/img/a/AVvXsEgzEKVlOJeQFHvaijXy3QuU5nKqXX1A9_fPYUFfB-2f3dryBKsMW3K2LOjCb2jQRmn18YTuJo1U6kpPEdOkehGMFHN6lWO7ngm93-E0dTQHn4YIYB8PkLgfan0bm3OdAJehkzOQIk6uU9bNS_3z_bbiicMMuWZrFVnBlkXTx8w1R1Ed3g8GuuBhy5p1=s1000');
+}
+.gallery3 {
+    background-image: url('https://tribunapr.uol.com.br/wp-content/uploads/sites/56/2022/02/28121731/rev-1-TBM-11721r_High_Res_JPEG-970x550.jpeg');
+}
+.gallery4 {
+    background-image: url('https://tribunapr.uol.com.br/wp-content/uploads/sites/56/2022/02/28121730/rev-1-TBM-56056JOrv4_High_Res_JPEG-770x440.jpeg');
+}
+.gallery5 {
+    background-image: url('https://www.geeklando.com.br/wp-content/uploads/2021/12/The-Batman-Lancamento-na-HBO-Max-sera-em-abril-de-2022.jpg');
+}
+.gallery6 {
+    background-image: url('https://www.geeklando.com.br/wp-content/uploads/2021/12/Zoe-Kravitz-Selina-Kyle-and-Robert-Pattinson-Batman-in-The-Batman.jpg');
+}
+
+@media(max-width: 768px){
+
+    .gallery {
+        margin-top: none;
+    }
+
+    .gallery-content {
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }
+}

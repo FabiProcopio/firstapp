@@ -1,0 +1,38 @@
+#logo {
+    object-fit: contain;
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+span {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro' sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px){
+    .footer-navigation {
+        display: block;
+    }
+    ul {
+        padding-inline-start: 0px;
+    }
+}
